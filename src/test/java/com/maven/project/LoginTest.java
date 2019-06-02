@@ -16,6 +16,7 @@ public class LoginTest
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://facebook.com");
+		driver.quit();
 		
 	/*	driver.get("http://recruit.cyberfreshers.com");
 		driver.findElement(By.id("username")).sendKeys("ritesh.cyberpodium@gmail.com");

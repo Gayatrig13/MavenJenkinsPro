@@ -1,5 +1,7 @@
 package com.maven.project;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +14,11 @@ public class GetTitleTest
 	public void GetTitleTest()
 	{
 	WebDriver driver = new FirefoxDriver();
-	driver.get("http://gmail.com");
+	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	driver.manage().window().maximize();
+	driver.get("http://google.com");
+	//driver.get("http://gmail.com");
 	System.out.println(driver.getTitle());
+	driver.quit();
 	}
 }

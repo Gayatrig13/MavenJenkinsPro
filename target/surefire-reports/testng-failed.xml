@@ -5,7 +5,7 @@
     <classes>
       <class name="com.maven.project.GetTitleTest">
         <methods>
-          <include name="gettitletest"/>
+          <include name="GetTitleTest"/>
         </methods>
       </class> <!-- com.maven.project.GetTitleTest -->
     </classes>
